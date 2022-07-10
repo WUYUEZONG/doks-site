@@ -21,9 +21,17 @@ strong 是强引用，会持有对象，引用计数器会+1，可用于属性�
 
 例如：
 
-```objective-c
+```objc
 @property (strong) NSString *aString;
 ```
+
+```swift
+let a = 's';
+```
+
+{{< highlight objc >}}
+@property (strong) NSString *aString;
+{{< / highlight >}}
 
 `strong` 是为了告诉编译器（xcode），被 `strong` 修饰的对象是强引用，需要 `retain` 操作，引用计数器会+1，默认情况下声明变量都是隐式 `strong` 申明。
 
