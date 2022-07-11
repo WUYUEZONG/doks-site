@@ -17,7 +17,8 @@ toc: true
 
 ## 说明
 
-strong 是强引用，会持有对象，引用计数器会+1，可用于属性的修饰
+{{< alert icon="👉" context="" text="STRONG是强引用，会持有对象，引用计数器会+1，可用于属性的修饰" />}}
+
 
 例如：
 
@@ -25,21 +26,13 @@ strong 是强引用，会持有对象，引用计数器会+1，可用于属性�
 @property (strong) NSString *aString;
 ```
 
-```swift
-let a = 's';
-```
-
-{{< highlight objc >}}
-@property (strong) NSString *aString;
-{{< / highlight >}}
-
 `strong` 是为了告诉编译器（xcode），被 `strong` 修饰的对象是强引用，需要 `retain` 操作，引用计数器会+1，默认情况下声明变量都是隐式 `strong` 申明。
 
 ## 举例
 
 **下面的例子来说明实例变量默认使用 strong 进行修饰的**
 
-```objectivec
+```objc
 // 默认情况下strArr引用testArr打印输出
 NSArray *testArr = @[@"a", @"b"];
 NSArray *strArr = testArr;
