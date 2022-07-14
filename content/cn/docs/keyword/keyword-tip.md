@@ -1,5 +1,5 @@
 ---
-title: "Tip"
+title: "Tips"
 description: ""
 lead: ""
 date: 2022-07-11T20:59:23+08:00
