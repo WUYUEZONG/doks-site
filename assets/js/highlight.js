@@ -10,6 +10,7 @@ import markdown from 'highlight.js/lib/languages/markdown';
 import python from 'highlight.js/lib/languages/python';
 import swift from 'highlight.js/lib/languages/swift';
 import objectivec from 'highlight.js/lib/languages/objectivec';
+import cpp from 'highlight.js/lib/languages/cpp';
 
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('json', json);
@@ -22,6 +23,7 @@ hljs.registerLanguage('md', markdown);
 hljs.registerLanguage('python', python);
 hljs.registerLanguage('swift', swift);
 hljs.registerLanguage('objc', objectivec);
+hljs.registerLanguage('cpp', cpp);
 
 
 document.addEventListener('DOMContentLoaded', () => {
